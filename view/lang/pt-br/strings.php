@@ -948,6 +948,7 @@ $a->strings['If empty, posts will not expire. Expired posts will be deleted'] = 
 $a->strings['Advanced expiration settings'] = 'Configurações avançadas de expiração';
 $a->strings['Advanced Expiration'] = 'Expiração avançada';
 $a->strings['Expire posts:'] = 'Expirar publicações:';
+$a->strings['Expire posts'] = 'Expirar publicações';
 $a->strings['Expire personal notes:'] = 'Expirar notas pessoais:';
 $a->strings['Expire starred posts:'] = 'Expirar publicações destacadas:';
 $a->strings['Expire photos:'] = 'Expirar fotos:';

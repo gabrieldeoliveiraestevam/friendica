@@ -83,11 +83,34 @@
 		<p>{{$privstatement[$i] nofilter}}</p>
 		{{/for}}
 		{{/if}}
-
+		<br>
+		<div>
+			<span>AQUI FICARA O ARQUIVO DO TERMO DE CONSENTIMENTO</span>
+			<br>
+			<input type="checkbox" id="checkboxterm">
+				Li e concordo com os termos de uso
+			</input>
+		</div>
+		
 		<div id="register-submit-wrapper" class="pull-right">
-			<button type="submit" name="submit" id="register-submit-button" class="btn btn-primary" value="{{$regbutt}}">{{$regbutt}}</button>
+			<button type="submit" name="submit" id="register-submit-button" class="btn btn-primary" value="{{$regbutt}}" disabled>{{$regbutt}}</button>
 		</div>
 		<div id="register-submit-end" class="clear"></div>
+
+		<script type="text/javascript">
+			console.log("Entrou no javascript");
+			var checkbox1 = document.getElementById("checkboxterm");
+			var submitbutton = document.getElementById("register-submit-button");
+			window.onload = function(){
+				checkbox1.addEventListener('change', function(){
+					if (this.checked){
+						submitbutton.disabled = false;
+					} else {
+						submitbutton.disabled = true;
+					}
+				});
+			}
+		</script>
 
 		{{if !$additional}}
 			<h3>{{$importh}}</h3>

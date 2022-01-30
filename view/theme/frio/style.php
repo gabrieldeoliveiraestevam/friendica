@@ -48,7 +48,7 @@ $login_bg_color   = DI::config()->get('frio', 'login_bg_color')   ?: '';
 $modified         = DI::config()->get('frio', 'css_modified')     ?: time();
 
 if (!$login_bg_image && !$login_bg_color) {
-	$login_bg_image = 'img/login_bg.jpg';
+	$login_bg_image = 'img/cic.jpg';
 }
 $login_bg_color = $login_bg_color ?: '#ededed';
 
